@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import logo_menu_bar from "../../assets/logo_menu_bar.png"
-export const NavBar = () => {
+import { Button } from "../Buttom/Buttom";
+export const NavBar= (): React.JSX.Element  => {
     return (
         <S.NavContainer>
             <S.Navbar>
@@ -8,7 +9,7 @@ export const NavBar = () => {
                 <S.ContainerItens>
                     <li><a>Home Artigo</a></li>
                     <li><a>Entrar</a></li>
-                    <li><a>Cadastrar</a></li>
+                    <Button><li><a>Cadastrar</a></li></Button>
                 </S.ContainerItens>
             </S.Navbar>
         </S.NavContainer>

@@ -1,9 +1,6 @@
 import {styled} from 'styled-components';
-import type { Theme } from '../../styles/Theme';
+import type { DefaultTheme } from '../../styles/Theme';
 
-interface DefaultTheme {
-  theme?: Theme;
-}
 
 export const NavContainer = styled.div<DefaultTheme>`
     width: 100%;
@@ -31,5 +28,7 @@ export const LogoNavbar = styled.img`
 export const ContainerItens = styled.ul`
     display: flex;
     gap: 20px;
+    align-items: center;
+    list-style: none;
 `;
 

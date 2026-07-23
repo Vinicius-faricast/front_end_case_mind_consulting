@@ -12,7 +12,13 @@ export type Theme = {
         Destructive: string,
         Primary_Hover: string
     }
+
+    transition: string
 };
+
+export interface DefaultTheme {
+  theme?: Theme;
+}
 
 export const theme: Theme = {
     color: {
@@ -26,6 +32,8 @@ export const theme: Theme = {
         Accent: '#F5993D',
         Destructive: '#EF4343',
         Primary_Hover: '#09778B'
-    }
+    },
+
+    transition: '.25s ease'
 };
 
