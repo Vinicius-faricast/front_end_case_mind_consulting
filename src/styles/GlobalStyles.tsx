@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        color: ${({ theme }: { theme: Theme }) => theme.color.Foreground};
     }
 
         body{
