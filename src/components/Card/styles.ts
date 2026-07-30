@@ -12,6 +12,8 @@ export const Container = styled.article<DefaultTheme>`
 
   transition: .25s;
 
+  margin-bottom: 2rem;
+
   &:hover{
       transform: translateY(-4px);
   }
