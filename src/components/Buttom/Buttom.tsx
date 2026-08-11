@@ -7,6 +7,8 @@ export function Button({
 
     fullWidth,
 
+    primary,
+
     ...props
 
 }: ButtonProps){
@@ -16,6 +18,8 @@ export function Button({
         <S.Container
 
             $fullWidth={fullWidth}
+
+            $primary={primary}
 
             {...props}
 

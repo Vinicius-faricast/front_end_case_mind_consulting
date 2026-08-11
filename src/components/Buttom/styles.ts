@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import type { DefaultTheme } from '../../styles/Theme';
 
-export const Container = styled.button<{ $fullWidth?: boolean}, DefaultTheme>`
+export const Container = styled.button<DefaultTheme & { $fullWidth?: boolean, $primary?: boolean}>`
     width: ${({ $fullWidth }) => ($fullWidth ? "100%" : "fit-content")};
 
     min-width: 180px;
@@ -10,19 +10,20 @@ export const Container = styled.button<{ $fullWidth?: boolean}, DefaultTheme>`
 
     padding: 0 24px;
 
-    border: none;
+    border: ${({ $primary }) => ($primary ? 'none' : ({ theme }) => theme.color.Primary + ' 1px solid')};
 
     cursor: pointer;
 
-    background: ${({ theme }) => theme.color.Primary};
+    background: ${({ $primary }) => ($primary ? ({ theme }) => theme.color.Primary : ({ theme }) => theme.color.Background)};
 
-    color: ${({ theme }) => theme.color.Primary_Foreground};
+    color: ${({ $primary }) => ($primary ? ({ theme }) => theme.color.Background : ({ theme }) => theme.color.Foreground)};
+
 
     font-size: 16px;
 
     font-weight: 500;
 
-    transition: ${({ theme }) => theme.color.transition};
+    transition: .25s;
 
     &:hover {
 
