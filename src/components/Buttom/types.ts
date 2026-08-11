@@ -8,4 +8,6 @@ export interface ButtonProps {
     disabled?: boolean;
 
     fullWidth?: boolean;
+
+    primary?: boolean;
 }

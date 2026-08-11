@@ -9,7 +9,7 @@ export const NavBar= (): React.JSX.Element  => {
                 <S.ContainerItens>
                     <li><a>Home Artigo</a></li>
                     <li><a>Entrar</a></li>
-                    <Button><li><a>Cadastrar</a></li></Button>
+                    <Button primary={true}><li><a>Cadastrar</a></li></Button>
                 </S.ContainerItens>
             </S.Navbar>
         </S.NavContainer>
