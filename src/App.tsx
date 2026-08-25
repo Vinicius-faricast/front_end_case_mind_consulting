@@ -4,19 +4,19 @@ import { Footer } from "./components/Footer/Footer";
 import { HeaderSectionsCards } from "./components/HeaderSectionsCards/HeaderSectionsCards";
 import { Hero } from "./components/Hero/Hero";
 import { NavBar } from "./components/NavBar/NavBar";
+import { NewsLetterComponent } from "./components/NewsLetterComponent/NewsLetterComponet";
 
 function App() {
 
   return (
     <>
       <NavBar />
-      <ContainerStyled>
-        <Hero />
-      </ContainerStyled>
+      <Hero />
       <ContainerStyled>
         <HeaderSectionsCards />
         <Cards/>
       </ContainerStyled>
+      <NewsLetterComponent/>
       <Footer />
     </>
   )
