@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import type { DefaultTheme } from "../../styles/Theme";
 
+export const Hero = styled.div<DefaultTheme>`
+    border-bottom: 1px solid ${({ theme }) => theme.color.Muted};
+    padding: 4rem 0;
+`;
 export const ContainerHero = styled.div`
     display: flex;
     max-width: 30%;
@@ -9,6 +13,7 @@ export const ContainerHero = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 3rem 0;
 `;
 
 export const TitleHero = styled.h1`
