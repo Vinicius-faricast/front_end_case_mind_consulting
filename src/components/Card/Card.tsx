@@ -22,13 +22,7 @@ export function Card({
 }: CardProps) {
   return (
     <S.Container onClick={onClick}>
-      <S.Banner
-        src={
-          image ??
-          "https://placehold.co/800x500"
-        }
-        alt={title}
-      />
+      {image && <S.Banner src={image} alt={title} />}
 
       <S.Content>
         <S.Header>

@@ -8,15 +8,117 @@ import { NewsLetterComponent } from "./components/NewsLetterComponent/NewsLetter
 
 function App() {
 
+  const cards01 = [
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "image": "https://placehold.co/800x500",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    },
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "image": "https://placehold.co/800x500",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    },
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "image": "https://placehold.co/800x500",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    },
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "image": "https://placehold.co/800x500",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    }
+  ]
+
+    const cards02 = [
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    },
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    },
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    },
+    {
+      "title": "Título do Card",
+      "description": "Descrição do Card",
+      "id": 1,
+      "author": "teste",
+      "category": "teste",
+      "likes": 2,
+      "publishedAt": "11-11-11",
+      "readingTime": 2,
+      "views": 2
+    }
+  ]
+
   return (
     <>
       <NavBar />
       <Hero />
       <ContainerStyled>
-        <HeaderSectionsCards />
-        <Cards/>
+        <HeaderSectionsCards title="Artigos em Destaque" subtitle="Os melhores conteúdos selecionados para você" />
+        <Cards cardsProps={cards01} />
       </ContainerStyled>
-      <NewsLetterComponent/>
+      <ContainerStyled>
+        <HeaderSectionsCards title="Artigos Recentes" subtitle="Conteudo da comunidade" />
+        <Cards cardsProps={cards02} />
+      </ContainerStyled>
+      <NewsLetterComponent />
       <Footer />
     </>
   )
