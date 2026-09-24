@@ -1,3 +1,4 @@
+import { AuthForm } from "../components/AuthForm/AuthForm";
 import { Cards } from "../components/Cards/Cards";
 import { ContainerStyled } from "../components/Container/Container";
 import { CTA } from "../components/CTA/CTA";
@@ -104,6 +105,23 @@ export const Home = (): React.JSX.Element => {
             "views": 2
         }
     ]
+
+    const fields = [
+        {
+            "name": "email",
+            "id": "email",
+            "type": "email",
+            "placeholder": "Email",
+            "label": true
+        },
+        {
+            "name": "password",
+            "id": "password",
+            "type": "password",
+            "placeholder": "Senha",
+            "label": true
+        }
+    ]
     return (
         <>
             <Hero />
@@ -117,6 +135,7 @@ export const Home = (): React.JSX.Element => {
             </ContainerStyled>
             <NewsLetterComponent />
             <CTA />
+            <AuthForm title="Login" subtitle="Seja bem-vindo de volta" fields={fields} buttonText="Entrar" />
         </>
     );
 };
