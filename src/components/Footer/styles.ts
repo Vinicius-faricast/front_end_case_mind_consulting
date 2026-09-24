@@ -3,7 +3,7 @@ import type { DefaultTheme } from "../../styles/Theme";
 
 export const Container = styled.footer<DefaultTheme>`
 
-    background:${({theme}) => theme.color.Background};
+    background: ${({ theme }) => theme.color.Card};
 
     padding:60px;
 
