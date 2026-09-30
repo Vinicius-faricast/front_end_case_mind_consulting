@@ -1,10 +1,10 @@
-import { AuthForm } from "../components/AuthForm/AuthForm";
-import { Cards } from "../components/Cards/Cards";
-import { ContainerStyled } from "../components/Container/Container";
-import { CTA } from "../components/CTA/CTA";
-import { HeaderSectionsCards } from "../components/HeaderSectionsCards/HeaderSectionsCards";
-import { Hero } from "../components/Hero/Hero";
-import { NewsLetterComponent } from "../components/NewsLetterComponent/NewsLetterComponet";
+import { AuthForm } from "../../components/AuthForm/AuthForm";
+import { Cards } from "../../components/Cards/Cards";
+import { ContainerStyled } from "../../components/Container/Container";
+import { CTA } from "../../components/CTA/CTA";
+import { HeaderSectionsCards } from "../../components/HeaderSectionsCards/HeaderSectionsCards";
+import { Hero } from "../../components/Hero/Hero";
+import { NewsLetterComponent } from "../../components/NewsLetterComponent/NewsLetterComponet";
 
 export const Home = (): React.JSX.Element => {
 
