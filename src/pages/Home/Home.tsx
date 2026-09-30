@@ -1,9 +1,10 @@
-import { Cards } from "../components/Cards/Cards";
-import { ContainerStyled } from "../components/Container/Container";
-import { CTA } from "../components/CTA/CTA";
-import { HeaderSectionsCards } from "../components/HeaderSectionsCards/HeaderSectionsCards";
-import { Hero } from "../components/Hero/Hero";
-import { NewsLetterComponent } from "../components/NewsLetterComponent/NewsLetterComponet";
+import { AuthForm } from "../../components/AuthForm/AuthForm";
+import { Cards } from "../../components/Cards/Cards";
+import { ContainerStyled } from "../../components/Container/Container";
+import { CTA } from "../../components/CTA/CTA";
+import { HeaderSectionsCards } from "../../components/HeaderSectionsCards/HeaderSectionsCards";
+import { Hero } from "../../components/Hero/Hero";
+import { NewsLetterComponent } from "../../components/NewsLetterComponent/NewsLetterComponet";
 
 export const Home = (): React.JSX.Element => {
 
@@ -102,6 +103,23 @@ export const Home = (): React.JSX.Element => {
             "publishedAt": "11-11-11",
             "readingTime": 2,
             "views": 2
+        }
+    ]
+
+    const fields = [
+        {
+            "name": "email",
+            "id": "email",
+            "type": "email",
+            "placeholder": "Email",
+            "label": true
+        },
+        {
+            "name": "password",
+            "id": "password",
+            "type": "password",
+            "placeholder": "Senha",
+            "label": true
         }
     ]
     return (

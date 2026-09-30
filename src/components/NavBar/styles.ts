@@ -1,4 +1,5 @@
 import {styled} from 'styled-components';
+import { Link } from 'react-router-dom';
 import type { DefaultTheme } from '../../styles/Theme';
 
 
@@ -30,5 +31,16 @@ export const ContainerItens = styled.ul`
     gap: 20px;
     align-items: center;
     list-style: none;
+`;
+
+export const NavLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.Foreground};
+    transition: ${({ theme }) => theme.transition};
+
+    &:hover {
+        text-decoration: underline;
+        color: ${({ theme }) => theme.color.MutedColor};
+    }
 `;
 
