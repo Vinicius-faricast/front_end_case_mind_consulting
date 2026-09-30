@@ -135,7 +135,6 @@ export const Home = (): React.JSX.Element => {
             </ContainerStyled>
             <NewsLetterComponent />
             <CTA />
-            <AuthForm title="Login" subtitle="Seja bem-vindo de volta" fields={fields} buttonText="Entrar" />
         </>
     );
 };
