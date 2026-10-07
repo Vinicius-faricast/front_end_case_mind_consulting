@@ -19,5 +19,7 @@ export interface CardProps {
 
   likes: number;
 
+  $noImage?: boolean;
+
   onClick?: () => void;
 }

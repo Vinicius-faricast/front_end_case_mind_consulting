@@ -18,23 +18,31 @@ export function Card({
   readingTime,
   views,
   likes,
+  $noImage,
   onClick,
 }: CardProps) {
+  const showImage = image && !$noImage;
   return (
     <S.Container onClick={onClick}>
-      {image && <S.Banner src={image} alt={title} />}
+      {showImage && <S.Banner src={image} alt={title} />}
 
       <S.Content>
         <S.Header>
           <S.Badge>{category}</S.Badge>
 
-          <S.Date>{publishedAt}</S.Date>
+          <S.Date>
+            {new Date(publishedAt).toLocaleDateString("pt-BR", {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric",
+            })}
+          </S.Date>
         </S.Header>
 
         <S.Title>{title}</S.Title>
 
         <S.Description>
-          {description}
+          {description.length > 100 ? description.slice(0, 100) + "..." : description}
         </S.Description>
 
         <S.Footer>
