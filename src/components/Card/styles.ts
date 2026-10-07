@@ -12,6 +12,9 @@ export const Container = styled.article<DefaultTheme>`
 
   transition: .25s;
 
+  flex: 1 1 260px;
+  max-width: 320px;
+
   margin-bottom: 2rem;
 
   &:hover{

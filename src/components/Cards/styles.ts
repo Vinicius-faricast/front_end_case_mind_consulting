@@ -4,6 +4,7 @@ export const ContainerCards = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 24px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
